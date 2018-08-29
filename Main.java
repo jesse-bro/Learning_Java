@@ -31,7 +31,7 @@ class Book{
     }
 
     // determine popularity
-    /** public static Book mostPopular( Book[] booklist){
+     /**public static Book mostPopular( Book[] booklist){
         int bestNum = bookList[0].numSold;
         int bestIndex = 0;
 
@@ -69,8 +69,15 @@ public class Main {
         bookList.add(b2);
         bookList.add(b3);
 
+        b1.sell(4);
+        b2.sell(15);
+        b3.sell(2);
+
+        // Book.mostPopular(bookList);
+
+
         for(Book b:bookList){
-            System.out.println(b.id+" "+b.title+" "+b.author+" "+b.quantity+" "+b.price);
+            System.out.println("ID: "+b.id+" Title: "+b.title+" Author "+b.author+" Quantity: "+b.quantity+" Price: "+b.price+" Sold: "+b.numsold);
         }
     }
 }
